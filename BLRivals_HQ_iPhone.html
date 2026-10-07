@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070a12">
+<title>BLRIVALS HQ — Mobile</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;background:#05070d;color:#fff;font-family:Arial,Helvetica,sans-serif}
+body{min-height:100vh;overflow-x:hidden}
+.bg{position:fixed;inset:0;z-index:-3;background:
+radial-gradient(circle at 15% 20%,rgba(0,140,255,.28),transparent 30%),
+radial-gradient(circle at 85% 30%,rgba(255,30,70,.25),transparent 28%),
+linear-gradient(135deg,#07101f 0%,#03050a 48%,#160710 100%)}
+.bg:before{content:"";position:absolute;inset:0;opacity:.32;background:
+linear-gradient(115deg,transparent 0 35%,rgba(0,174,255,.22) 35.5%,transparent 36% 59%,rgba(255,35,65,.2) 59.5%,transparent 60%),
+repeating-linear-gradient(120deg,transparent 0 35px,rgba(255,255,255,.025) 36px 37px)}
+nav{position:sticky;top:0;z-index:5;padding:14px 16px;backdrop-filter:blur(14px);background:rgba(4,6,12,.72);border-bottom:1px solid #243047;display:flex;justify-content:space-between;align-items:center}
+.logo{font-weight:1000;letter-spacing:1px}.logo b{color:#ff3154}.navbtn{color:#fff;text-decoration:none;border:1px solid #30405d;padding:8px 10px;border-radius:9px;font-size:12px}
+main{max-width:850px;margin:auto;padding:24px 16px 50px}
+.hero{min-height:62vh;display:flex;flex-direction:column;justify-content:center;padding:20px 0}
+.kicker{color:#39b9ff;font-size:12px;font-weight:900;letter-spacing:3px}
+h1{font-size:clamp(48px,14vw,100px);line-height:.82;margin:12px 0;font-weight:1000;letter-spacing:-4px}
+h1 span{color:#ff3154;text-shadow:0 0 28px rgba(255,49,84,.35)}
+.hero p{max-width:560px;color:#aebbd0;line-height:1.6}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{display:block;text-decoration:none;color:#fff;min-height:145px;padding:18px;border:1px solid #263650;border-radius:18px;background:linear-gradient(145deg,rgba(13,25,45,.9),rgba(10,10,18,.86));box-shadow:0 12px 35px rgba(0,0,0,.3);position:relative;overflow:hidden}
+.card:after{content:"";position:absolute;width:100px;height:100px;right:-35px;bottom:-35px;border-radius:50%;background:rgba(0,174,255,.18);filter:blur(15px)}
+.card.red:after{background:rgba(255,40,70,.2)}
+.card h2{margin:4px 0 8px;font-size:20px}.card p{margin:0;color:#91a0b7;font-size:13px;line-height:1.45}
+.badge{display:inline-block;font-size:10px;font-weight:900;color:#070a12;background:#45c4ff;padding:4px 7px;border-radius:5px}
+.ad{margin:24px 0;padding:22px;text-align:center;border:1px dashed #34425a;border-radius:14px;color:#67758b;font-size:11px;letter-spacing:2px}
+section{margin-top:34px}h3{font-size:25px;margin:0 0 12px}.ticker{border-block:1px solid #222c3d;padding:13px 0;color:#8fa1bc;font-size:12px;overflow:hidden;white-space:nowrap}
+@media(max-width:650px){.grid{grid-template-columns:1fr}.hero{min-height:70vh}h1{font-size:56px}.card{min-height:120px}}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<nav><div class="logo">BL<span>RIVALS</span> HQ</div><a class="navbtn" href="#vault">ENTER HQ</a></nav>
+<main>
+<section class="hero">
+<div class="kicker">ROBLOX • BLUE LOCK: RIVALS</div>
+<h1>ENTER THE<br><span>EGO ZONE.</span></h1>
+<p>The mobile-first command center for codes, builds, styles, flows, weapons, traits and meta rankings.</p>
+<div class="ticker">⚡ CODE VAULT &nbsp; • &nbsp; META TRACKER &nbsp; • &nbsp; RIVALS WIKI &nbsp; • &nbsp; EGO CHECK &nbsp; • &nbsp; UPDATED FOR MOBILE</div>
+</section>
+<section id="vault">
+<div class="grid">
+<a class="card" href="#codes"><span class="badge">LIVE</span><h2>CODE VAULT</h2><p>Find active codes and copy them with one tap.</p></a>
+<a class="card red" href="#wiki"><span class="badge">WIKI</span><h2>RIVALS WIKI</h2><p>Styles, Flows, Weapons and Traits in one place.</p></a>
+<a class="card" href="#tier"><span class="badge">META</span><h2>TIER LIST</h2><p>See what belongs in S, A, B and C tier.</p></a>
+</div>
+</section>
+<div class="ad">ADVERTISEMENT • AD SLOT</div>
+<section id="codes"><h3>⚡ Code Vault</h3><div class="card"><span class="badge">EXAMPLE</span><h2>EXAMPLECODE1</h2><p>Free Spins • Tap/copy support can be added to the live database.</p></div></section>
+<section id="wiki"><h3>📚 Rivals Wiki</h3><div class="grid">
+<div class="card"><h2>Styles</h2><p>Player styles and rarity data.</p></div>
+<div class="card red"><h2>Flows</h2><p>Flow effects and builds.</p></div>
+<div class="card"><h2>Weapons</h2><p>Weapons and abilities.</p></div>
+</div></section>
+<section id="tier"><h3>🏆 Meta Rankings</h3><div class="card red"><h2>S TIER</h2><p>Reserved for the strongest current meta picks.</p></div></section>
+</main>
+</body>
+</html>
